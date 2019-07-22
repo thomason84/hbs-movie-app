@@ -1,0 +1,105 @@
+html{
+  font-size: 62.5%;
+}
+body{
+  font-size: 1.6rem;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  color: #333;
+  margin: 0rem;
+  padding: 0rem;
+}
+.hidden{
+  display: none;
+}
+.italic{
+  font-style: italic;
+}
+.bold{
+  font-weight: bold;
+  font-size: 2rem;
+}
+header{
+  height: 5rem;
+  display: flex;
+  -webkit-display: flex;
+  align-items: center;
+  background-color: #eee;
+  padding: 0rem 1rem;
+  border-bottom: 1px solid #333;
+}
+.headerText{
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.link{
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: dodgerblue;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+#movieList{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -webkit-display: flex;
+  -webkit-justify-content: space-around;
+  margin-top: 2rem;
+}
+.movie{
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  padding: 2rem 1rem;
+  width: 100%;
+  max-width: 61rem;
+}
+.movie:hover{
+  background-color: #def;
+}
+img{
+  display: inline-block;
+  width: 100%;
+}
+#detailsContainer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -webkit-display: flex;
+  -webkit-justify-content: space-between;
+  width: 100%;
+  max-width: 100rem;
+  font-size: 1.8rem;
+}
+.moviePoster{
+  width: 100%;
+  max-width: 40rem;
+  display: inline-block;
+  padding: 1rem;
+}
+.movieTitle{
+  margin-bottom: 0rem;
+}
+.tagline{
+  margin-top: 0rem;
+  font-weight: normal;
+}
+.movieDetails{
+  width: 100%;
+  max-width: 50rem;
+  display: inline-block;
+  padding: 1rem;
+}
+
+
+@media only screen and (max-width: 50rem) {
+  .movie{
+    width: 100%;
+    max-width: 100%;
+  }
+}

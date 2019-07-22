@@ -1,0 +1,26 @@
+{{> head}}
+{{> header}}
+
+  <main id='detailsContainer'>
+    <div class="moviePoster">
+      <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="poster of {{movie.title}}">
+    </div>
+    <div class="movieDetails">
+      <h1 class='movieTitle'>{{movie.title}}</h1>
+      <h3 class='italic tagline'>{{movie.tagline}}</h3>
+      <p><span class='bold'>Release Date:</span> {{movie.release_date}}</p>
+      <p><span class='bold'>Average vote:</span> {{movie.vote_average}}</p>
+      <p><span class='bold'>Vote count:</span> {{movie.vote_count}}</p>
+      <p><span class='bold'>Description:</span> <br>{{movie.overview}}</p>
+    </div>
+  </main>
+
+{{> footer}}
+
+
+<script type="text/javascript">
+  (function(){
+    document.getElementById('currentlyPlayingHeader').classList.add('hidden');
+    document.getElementById('backToListLink').classList.remove('hidden');
+  })();
+</script>

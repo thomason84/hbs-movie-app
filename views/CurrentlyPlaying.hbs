@@ -1,0 +1,16 @@
+{{> head}}
+{{> header}}
+
+    <main>
+        <section id='movieList'>
+            <!-- <div id='movieList'></div> -->
+            {{#each data}}
+              <a id='{{this.id}}' class="movie" href="/MovieDetail?movie={{this.id}}">
+                <h2 class='movieTitle'>{{this.title}}</h2 class='movieTitle'>
+                <img src='https://image.tmdb.org/t/p/w500/{{this.backdrop_path}}' alt='backdrop image for {{this.title}}'>
+              </a>
+            {{/each}}
+        </section>
+    </main>
+
+{{> footer}}
